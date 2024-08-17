@@ -1,1 +1,16 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete user</title>
+</head>
+<body>
+    <h3>To delete this users : <%= users.email %>, enter the passward </h3>
+    <form method="post" action="/users/<%= users.id %>?_method=delete">
+        <input placeholder="Enter password to delete" name="passward"/>
+        <button>Delete</button>
+      </form>
+      
+</body>
+</html>
